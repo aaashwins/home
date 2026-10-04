@@ -264,6 +264,87 @@
     }
 }
 
+
+
+
+
+
+
+
+/* ===================================================================
+ * # LUTHER MOBILE PORTFOLIO TITLES FIX
+ * ------------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+    /* 1. Make the item info block permanently visible on mobile */
+    .folio-item .folio-item__info {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        padding: 1.6rem 2rem !important;
+        background-color: var(--color-gray-12, #101112) !important;
+        border-bottom-left-radius: var(--border-radius, 3px);
+        border-bottom-right-radius: var(--border-radius, 3px);
+    }
+
+    /* 2. Ensure headlines & project details display with high contrast */
+    .folio-item .folio-item__title,
+    .folio-item .folio-item__caption,
+    .folio-item .folio-item__meta,
+    .folio-item h3,
+    .folio-item h4 {
+        opacity: 1 !important;
+        visibility: visible !important;
+        color: var(--color-text-dark, #ffffff) !important;
+        font-family: var(--font-1, "Public Sans", sans-serif);
+        font-size: 1.6rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.4rem !important;
+        display: block !important;
+    }
+
+    /* 3. Style category / tag subtitle text */
+    .folio-item .folio-item__cat,
+    .folio-item .folio-item__project,
+    .folio-item p {
+        opacity: 1 !important;
+        visibility: visible !important;
+        color: var(--color-1, #eabe7c) !important;
+        font-size: 1.3rem !important;
+        margin: 0 !important;
+        display: block !important;
+    }
+
+    /* 4. Fix project container layout on touch screens */
+    .folio-item {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-bottom: 3rem !important;
+        overflow: hidden;
+    }
+
+    .folio-item .folio-item__thumb {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------- 
  * ## grid variables
  * ------------------------------------------------------------------- */
