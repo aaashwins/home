@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentation Video Showcase</title>
+  <style>
+    /* Portfolio Card Container */
+    .portfolio-video-card {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Header Styling */
+    .card-header {
+      margin-bottom: 1.25rem;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #111827;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .card-description {
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Responsive Video Container */
+    .embed-container {
+      position: relative;
+      width: 100%;
+      background-color: #000000;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .embed-container video {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    /* Bottom Action Bar */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid #f3f4f6;
+    }
+
+    .footer-note {
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+
+    /* Action Button */
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1.25rem;
+      background-color: #2563eb;
+      color: #ffffff;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    .download-btn:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="portfolio-video-card">
+    <div class="card-header">
+      <h3 class="card-title">Interactive Presentation Showcase</h3>
+      <p class="card-description">
+        Watch the video demo below to view the full 3D animations and fluid slide transitions captured from the native presentation deck.
+      </p>
+    </div>
+
+    <!-- Your Responsive Video Container -->
+    <div class="embed-container">
+      <video controls poster="path-to-cover-slide.jpg" width="100%">
+        <source src="presentation-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="card-footer">
+      <span class="footer-note">Recorded in 1080p 60FPS</span>
+      <a href="path-to-your-presentation.pptx" download class="download-btn">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+          <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+        </svg>
+        Download Original PPTX
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>

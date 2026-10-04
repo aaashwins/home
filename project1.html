@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ashwin | Supermarket Stock Variance & Analytics</title>
+    <meta name="description" content="Supermarket Stock Variance & Analytics Interactive Dashboard and Documentation by Ashwin.">
+    <meta name="author" content="Ashwin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Custom Portfolio & Tight Layout Styles -->
+    <style>
+        .s-content {
+            padding-top: 40px !important;
+            padding-bottom: 0 !important;
+            margin-top: 0 !important;
+        }
+
+        /* Tight Hero Header */
+        .portfolio-header {
+            text-align: center;
+            padding: 20px 15px 10px !important;
+            max-width: 900px;
+            margin: 0 auto !important;
+        }
+
+        .portfolio-header .project-badge {
+            display: inline-block;
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .portfolio-header h1 {
+            font-size: 2rem !important;
+            margin-top: 0 !important;
+            margin-bottom: 6px !important;
+            line-height: 1.2 !important;
+        }
+
+        .portfolio-header p {
+            font-size: 0.95rem !important;
+            color: #a0a0a0;
+            margin-top: 0 !important;
+            margin-bottom: 15px !important;
+        }
+
+        /* App Container */
+        .app-container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 0 auto 25px !important;
+            background: #ffffff;
+            border: 1px solid #222;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .iframe-wrapper {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+            min-height: 700px;
+            background-color: #0e1117;
+        }
+
+        .iframe-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        /* Documentation Section */
+        .doc-container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 0 auto 50px !important;
+            background: #11151c;
+            border: 1px solid #222a36;
+            border-radius: 10px;
+            padding: 35px 40px;
+            box-sizing: border-box;
+            color: #d1d5db;
+        }
+
+        .doc-container h2 {
+            font-size: 1.6rem !important;
+            color: #ffffff;
+            margin-top: 0 !important;
+            margin-bottom: 15px !important;
+            border-bottom: 2px solid #1f2937;
+            padding-bottom: 10px;
+        }
+
+        .doc-container h3 {
+            font-size: 1.15rem !important;
+            color: #60a5fa;
+            margin-top: 20px !important;
+            margin-bottom: 8px !important;
+        }
+
+        .doc-container p {
+            font-size: 0.92rem !important;
+            line-height: 1.6 !important;
+            color: #9ca3af;
+            margin-bottom: 15px !important;
+        }
+
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .doc-card {
+            background: #1a202c;
+            border: 1px solid #2d3748;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .doc-card h4 {
+            color: #f3f4f6;
+            margin-top: 0 !important;
+            margin-bottom: 8px !important;
+            font-size: 1rem !important;
+        }
+
+        .doc-card ul {
+            margin: 0;
+            padding-left: 18px;
+            color: #9ca3af;
+            font-size: 0.88rem;
+        }
+
+        .doc-card li {
+            margin-bottom: 6px;
+        }
+
+        .tech-pill {
+            display: inline-block;
+            background: #1f2937;
+            color: #93c5fd;
+            border: 1px solid #374151;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body id="top">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Page Wrap -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <!-- Site Header -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="header-main-title">Ashwin</span>
+                <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="index.html#intro" class="home-link">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li class="current"><a href="index.html#works">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+        <!-- Main Content Section -->
+        <main class="s-content">
+
+            <!-- Hero Header Section -->
+            <div class="portfolio-header">
+                <span class="project-badge">Retail Operations & Inventory Control</span>
+                <h1>Supermarket Stock Variance & Analytics</h1>
+                <p>An end-to-end operational intelligence platform monitoring physical stock audits, wastage patterns, and inventory shrinkage.</p>
+            </div>
+
+            <!-- Main Dashboard Section -->
+            <div class="app-container">
+                <div class="iframe-wrapper">
+                    <iframe 
+                        src="https://aaashwins-supermarket-stock-variance-analytics-app-mdmpn6.streamlit.app/?embedded=true" 
+                        title="Supermarket Stock Variance Analytics App"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Project Documentation Section -->
+            <div class="doc-container">
+                <h2>Project Overview & Data Pipeline</h2>
+                <p>
+                    This retail analytics system bridges physical stock auditing data with POS transactional records to pinpoint stock shrinkage, damaged inventory loss, and high-variance departments. Designed for store operations and category managers, it highlights stock discrepancies between system records and physical shelf counts.
+                </p>
+
+                <h3>Technologies Used</h3>
+                <div style="margin-bottom: 20px;">
+                    <span class="tech-pill">SQL Server / Views</span>
+                    <span class="tech-pill">Python 3.11</span>
+                    <span class="tech-pill">Streamlit</span>
+                    <span class="tech-pill">Power Query</span>
+                    <span class="tech-pill">Plotly Express</span>
+                    <span class="tech-pill">DAX / Modeling</span>
+                </div>
+
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <h4>1. Stock Reconciliation Engine</h4>
+                        <ul>
+                            <li><strong>System vs. Physical:</strong> Calculates variance quantity (`Diff_Qy`) and total value loss (`Diff_Value`).</li>
+                            <li><strong>Departmental Breakdowns:</strong> Tracks variance distributions across high-turnover categories.</li>
+                            <li><strong>Shrinkage Index:</strong> Flags departments exceeding allowable inventory variance thresholds.</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-card">
+                        <h4>2. Wastage & Damage Analysis</h4>
+                        <ul>
+                            <li>Categorizes loss drivers between expired merchandise, store damages, and inventory uncounts.</li>
+                            <li>Quantifies monthly financial leakage across high-risk store locations.</li>
+                            <li>Automates re-order suggestions for high-turnover grocery lines.</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-card">
+                        <h4>3. Anonymization & Data Security</h4>
+                        <ul>
+                            <li><strong>Masked Barcodes:</strong> Converted raw identifiers to `bigint` sequential keys.</li>
+                            <li><strong>Scaled Financial Values:</strong> Financial figures scaled using decimal multipliers to protect exact commercial margins.</li>
+                            <li><strong>Generic Naming:</strong> Standardized product descriptors to protect vendor trade secrets.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <section id="contact" class="s-contact target-section">
+
+                <div class="row contact-main wide" data-animate-block>
+                    <div class="column lg-12">
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Get In Touch
+                        </h2>
+
+                        <p class="h1" data-animate-el>
+                            Have a project in mind, an ERP question, or just want to collaborate? Feel free to reach out.
+                        </p>
+
+                        <div class="btn-wrap" data-animate-el>
+                            <a href="mailto:ashwin787@gmail.com" class="btn btn--primary btn--large">Say Hello</a>
+                        </div>
+
+                    </div>
+                </div> <!-- end contact-main -->
+
+                <div class="row contact-bottom" data-animate-block>
+                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block"> 
+                        <h3 class="text-pretitle">Reach Me At</h3>
+                        <p class="contact-links">
+                            <a href="mailto:ashwin787@gmail.com" class="mailtoui">ashwin787@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Social</h3>
+                        <ul class="contact-social">
+                            <li><a href="https://medium.com/@ashwin787">Medium</a></li>
+                            <li><a href="#0">Twitter</a></li>
+                            <li><a href="#0">Dribbble</a></li>
+                            <li><a href="#0">Instagram</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column lg-5 md-12 tab-12 contact-block">
+                        <a href="#top" class="btn btn--medium u-fullwidth smoothscroll">Back to Top</a>
+                    </div>
+                </div> <!-- end contact-bottom -->
+
+            </section> <!-- end s-contact -->
+
+        </main> <!-- end s-content -->
+
+        <!-- Footer -->
+        <footer class="s-footer">
+            <div class="row">
+                <div class="column ss-copyright">
+                    <span>© Copyright Ashwin 2026</span> 
+                </div>
+            </div>
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end s-pagewrap -->
+
+    <!-- Java Script -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
