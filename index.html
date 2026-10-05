@@ -378,10 +378,10 @@
                     <div class="lg:col-span-7 space-y-4">
                         <div class="p-6 rounded-2xl bg-white border border-zinc-200">
                             <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 mb-3">
-                                <h3 class="font-bold text-zinc-900 text-base">Bachelor of Technology in Computer Science & Engineering</h3>
+                                <h3 class="font-bold text-zinc-900 text-base">Master of Computer Applications</h3>
                                 <span class="font-mono text-xs text-zinc-500 bg-zinc-100 px-2.5 py-1 rounded-full w-max">2019 – 2023</span>
                             </div>
-                            <div class="font-mono text-xs text-zinc-600 mb-3">APJ Abdul Kalam Technological University</div>
+                            <div class="font-mono text-xs text-zinc-600 mb-3">Bharathiar University Coimbatore, India</div>
                             <p class="text-sm text-zinc-600 mb-4 leading-relaxed">
                                 Graduated with First Class Honors. Core focus on Database Management Systems (DBMS), Data Structures & Algorithms, Software Engineering, and Machine Learning Fundamentals.
                             </p>
@@ -490,9 +490,9 @@
                 <div class="space-y-6">
                     <h2 class="text-xl font-bold text-zinc-900 border-b border-zinc-200 pb-2 font-mono">[ Degrees ]</h2>
                     <div class="p-6 bg-white rounded-2xl border border-zinc-200">
-                        <span class="font-mono text-xs text-zinc-500">2019 - 2023</span>
-                        <h3 class="text-lg font-bold text-zinc-900 mt-1">B.Tech in Computer Science & Engineering</h3>
-                        <p class="text-xs font-mono text-zinc-600 mb-3">APJ Abdul Kalam Technological University</p>
+                        <span class="font-mono text-xs text-zinc-500">2019 - 2021</span>
+                        <h3 class="text-lg font-bold text-zinc-900 mt-1">Masters of Computer Applications</h3>
+                        <p class="text-xs font-mono text-zinc-600 mb-3">Bharathiar University Coimbatore, India</p>
                         <p class="text-sm text-zinc-600 leading-relaxed mb-4">
                             Focused coursework on database design, relational algebra, object-oriented programming, data structures, cloud platforms, and statistics.
                         </p>
@@ -551,14 +551,14 @@
                     <div class="space-y-3 font-mono text-xs pt-4">
                         <div class="flex items-center gap-3 text-zinc-300">
                             <i class="ph ph-envelope-simple text-lg text-zinc-400"></i>
-                            <span id="email-text">aswin.ajith.data@gmail.com</span>
-                            <button onclick="copyToClipboard('aswin.ajith.data@gmail.com')" class="text-zinc-500 hover:text-white px-2 py-0.5 rounded bg-zinc-800 transition-colors">
+                            <span id="email-text">ashwinajith398@outlook.com</span>
+                            <button onclick="copyToClipboard('ashwinajith398@outlook.com')" class="text-zinc-500 hover:text-white px-2 py-0.5 rounded bg-zinc-800 transition-colors">
                                 [ Copy ]
                             </button>
                         </div>
                         <div class="flex items-center gap-3 text-zinc-300">
                             <i class="ph ph-phone text-lg text-zinc-400"></i>
-                            <span>+971 50 123 4567</span>
+                            <span>+971 56 308 7967</span>
                         </div>
                         <div class="flex items-center gap-3 text-zinc-300">
                             <i class="ph ph-map-pin text-lg text-zinc-400"></i>
@@ -779,48 +779,50 @@
                 `
             },
             {
-                id: 'proj-1',
-                title: 'Global Retail Supply Chain Analytics Dashboard',
-                category: 'dashboards',
-                categoryLabel: 'Power BI / DAX',
+                id: 'proj-2',
+                title: 'Executive Sales Performance and Customer Intelligence App',
+                category: 'python',
+                categoryLabel: 'Streamlit App',
                 date: 'Q1 2026',
-                summary: 'Enterprise executive dashboard analyzing $42M+ sales data across 14 global warehouses with real-time inventory alerts.',
-                tools: ['Power BI', 'DAX', 'SQL Server', 'Power Query'],
+                isLiveApp: true,
+                liveUrl: 'https://aaashwins-ecommerce-rfm-churn-dashboard-app-mc4gqx.streamlit.app/?embedded=true',
+                summary: 'Interactive web application tracking Real-time revenue analytics, RFM segmentation, and high-precision churn predictions..',
+                tools: ['Python', 'Streamlit', 'Pandas', 'Plotly'],
                 metrics: [
-                    { label: 'Revenue Analyzed', value: '$42.8M' },
-                    { label: 'Stockout Reduction', value: '18.4%' },
-                    { label: 'Refresh Time', value: '< 4 Sec' }
+                    { label: 'Variance Detected', value: '4.2%' },
+                    { label: 'SKUs Analyzed', value: '12,500+' },
+                    { label: 'Refresh Mode', value: 'Live' }
                 ],
                 description: `
                     <h2 class="text-2xl font-bold text-zinc-900 mb-3">Project Overview</h2>
                     <p class="text-zinc-600 text-sm leading-relaxed mb-4">
-                        This project solves critical inventory visibility issues for a multi-regional retail operation. Designed and deployed an end-to-end Power BI report connected directly to SQL Server database instances.
+                        Built an interactive Python & Streamlit analytics application that shows Real-time revenue analytics, RFM segmentation, and high-precision churn predictions..
                     </p>
 
-                    <h3 class="text-lg font-bold text-zinc-900 mb-2 font-mono">[ Technical Architecture ]</h3>
+                    <div class="p-4 bg-zinc-900 text-white rounded-xl mb-6">
+                        <div class="flex items-center justify-between font-mono text-xs mb-2">
+                            <span class="text-emerald-400">[ Interactive Preview Available ]</span>
+                            <span>Streamlit Cloud Host</span>
+                        </div>
+                        <p class="text-xs text-zinc-300 leading-relaxed mb-3">
+                            You can directly launch and interact with the full live application within this portfolio.
+                        </p>
+                        <button onclick="closeProjectModal(); launchStreamlitApp('Executive Sales Performance and Customer Intelligence App', 'https://aaashwins-ecommerce-rfm-churn-dashboard-app-mc4gqx.streamlit.app/?embedded=true')" class="px-4 py-2 bg-white hover:bg-zinc-200 text-zinc-900 rounded-lg font-mono text-xs font-bold transition-all flex items-center gap-2">
+                            <i class="ph ph-play-circle text-base"></i>
+                            <span>Launch Live App Viewer</span>
+                        </button>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-zinc-900 mb-2 font-mono">[ Technical Features ]</h3>
                     <ul class="list-disc list-inside text-sm text-zinc-600 space-y-1.5 mb-6">
-                        <li>Engineered star-schema data models with 8 fact/dimension tables.</li>
-                        <li>Implemented complex DAX calculated measures using CALCULATE, SUMX, and Time Intelligence functions.</li>
-                        <li>Built Dynamic Row-Level Security (RLS) ensuring regional managers only view relevant territorial figures.</li>
+                        <li>Interactive variance filters by store branch, SKU category, and date range.</li>
+                        <li>Dynamic statistical distribution graphs using Plotly Express.</li>
+                        <li>Automated CSV output generator for inventory audit reports.</li>
                     </ul>
-
-                    <h3 class="text-lg font-bold text-zinc-900 mb-2 font-mono">[ DAX Snippet Highlight ]</h3>
-                    <pre class="bg-zinc-900 text-emerald-400 font-mono text-xs p-4 rounded-xl overflow-x-auto mb-6">
-// YoY Sales Growth Calculation
-Sales YoY % = 
-VAR CurrentSales = [Total Revenue]
-VAR PreviousSales = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Calendar'[Date]))
-RETURN
-    DIVIDE(CurrentSales - PreviousSales, PreviousSales, 0)</pre>
-
-                    <h3 class="text-lg font-bold text-zinc-900 mb-2 font-mono">[ Key Business Outcome ]</h3>
-                    <p class="text-zinc-600 text-sm leading-relaxed">
-                        Reduced report generation time from 6 hours weekly to automated instant refreshes, saving approximately 25 hours per month for operations executives.
-                    </p>
                 `
             },
             {
-                id: 'proj-2',
+                id: 'proj-',
                 title: 'Automated Financial ETL Pipeline & Reconciliation',
                 category: 'sql',
                 categoryLabel: 'SQL & ETL',
